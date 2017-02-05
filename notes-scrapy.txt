@@ -70,4 +70,8 @@ JOGO DO ADIVINHA 02
 http://localhost:8888/notebooks/adivinha-02.ipynb
 
 
+=======================================================================
+=======================================================================
+https://www.pycursos.com/scrapy/aulas/316/
+JOGO DO ADIVINHA 03
 
