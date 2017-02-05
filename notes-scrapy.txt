@@ -1,0 +1,73 @@
+# https://www.pycursos.com/scrapy/aulas/310/
+sudo apt-get install python3.5-dev python-virtualenv
+
+# cria o ambiente virtual com python3.5
+$ virtualenv venv -p python3.5
+
+# ativando a venv
+# quando eu ativo o ambiente virtual através do source eu sobreescrevo os
+comandos globais do sistema com os comandos do python local 
+exeplo:
+    $ source venv/bin/activate
+    $ ls -1 venv/bin/
+    activate
+    activate.csh
+    activate.fish
+    activate_this.py
+    easy_install
+    easy_install-3.5
+    pip
+    pip3
+    pip3.5
+    python
+    python3
+    python3.5
+    python-config
+    wheel
+
+exemplo:
+# instalo jupyter a partir de dentro da venv ativada
+~/Documentos/labs/scrapy
+$ pip install jupyter
+
+# abre o jupyter notebook a partir de dentro da venv usando o framework tornado
+~/Documentos/labs/scrapy
+$ jupyter notebook
+
+# se tiver usando vagrant a sintaxe do comando é:
+$ pip install jupyter --no-browser --ip=0.0.0.0
+
+# a partir da pagina do jupyter eu crio new > Notebook Python
+digito o comando python na linha e pressiono shift + enter3
+
+
+
+
+# usando python da versão da venv
+$ python
+Python 3.5.2 (default, Nov 17 2016, 17:05:23)
+
+
+=======================================================================
+=======================================================================
+https://www.pycursos.com/scrapy/aulas/313/
+INTRODUÇÃO AO PYTHON
+
+ipython notebook
+http://localhost:8888/notebooks/Introdu%C3%A7%C3%A3o.ipynb
+
+
+=======================================================================
+=======================================================================
+https://www.pycursos.com/scrapy/aulas/314/
+JOGO DO ADIVINHA 01
+http://localhost:8888/notebooks/advinha-01.ipynb
+
+=======================================================================
+=======================================================================
+https://www.pycursos.com/scrapy/aulas/315/
+JOGO DO ADIVINHA 02
+http://localhost:8888/notebooks/adivinha-02.ipynb
+
+
+
