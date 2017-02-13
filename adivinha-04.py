@@ -26,7 +26,7 @@ while tentativa <= 5:
         print('Dica: O número que você procura é menor que %s.' %chute)
 
     # verifica se está frio ou quente
-    if abs(diferenca) <= abs(numero) * .2: # verifica se a diferença é menor que 20% da variável numero
+    if abs(diferenca) <= abs(numero) * 0.2: # verifica se a diferença é menor que 20% da variável numero
         print('Está quente!!')
     else:
         print('Está frio!!')
