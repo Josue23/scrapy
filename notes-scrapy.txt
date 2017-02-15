@@ -75,3 +75,48 @@ http://localhost:8888/notebooks/adivinha-02.ipynb
 https://www.pycursos.com/scrapy/aulas/316/
 JOGO DO ADIVINHA 03
 
+
+=======================================================================
+=======================================================================
+https://www.pycursos.com/scrapy/aulas/326/
+lista-de-contatos-04
+
+Dicionários
+são estruturas com chave e valor
+In [4]: info = {}
+
+In [5]: info['nome'] = 'Fulano'
+
+In [6]: info['email'] = 'f@f.com'
+
+In [7]: info
+Out[7]: {'email': 'f@f.com', 'nome': 'Fulano'}
+
+In [8]: type(info)
+Out[8]: dict
+
+In [9]: info['nome']
+Out[9]: 'Fulano'
+
+
+Posso inicializar o dicionário vazio ou posso inicializar com valor
+exemplo de dicionário inicializado vazio:
+ In [4]: info = {}
+
+exemplo de dicionário inicializado vazio:
+{ # retorna um dicionário com os dados do contato
+        'nome': nome,
+        'email': email,
+        'telefone': telefone
+    }
+geralmente a chave é uma string mas pode ser um número ou outro objeto
+
+salvar_contato(info['nome'], info['email'], info['telefone'])
+
+# as duas linhas abaixo fazem a mesma coisa
+# forma abreviada
+salvar_contato(**info)
+
+# forma não abreviada
+salvar_contato(nome=info['nome'],email=info['email'],telefone=info['telefone'])
+
