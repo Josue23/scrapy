@@ -80,9 +80,10 @@ JOGO DO ADIVINHA 03
 =======================================================================
 https://www.pycursos.com/scrapy/aulas/326/
 lista-de-contatos-04
-
 Dicionários
 são estruturas com chave e valor
+a chave, geralmente é uma string mas pode ser número ou outro objeto
+
 In [4]: info = {}
 
 In [5]: info['nome'] = 'Fulano'
@@ -104,7 +105,7 @@ exemplo de dicionário inicializado vazio:
  In [4]: info = {}
 
 exemplo de dicionário inicializado vazio:
-{ # retorna um dicionário com os dados do contato
+        { # retorna um dicionário com os dados do contato
         'nome': nome,
         'email': email,
         'telefone': telefone
