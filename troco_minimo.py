@@ -10,26 +10,25 @@ algoritmos gulosos
     a escolha e feita de acordo com critério guloso - decisão localmente ótima
     nem sempre dão soluções ótimas
 
-problema do troco (troco mínimo)
+problema do troco (troco mínimo em moedas)
 moedas = (100, 50, 25, 5, 1)
 
-exemplo de etroco: 75 centavos
+exemplo de troco:
+75 centavos
 qual a qtde mínima de moedas?
 2 moedas (1 moeda de 50, 1 moeda de 25)
 '''
 
 moedas = [100, 50, 25, 5, 1]
-troco = int(input('Digite o valor do troco: '))
-totalTroco = 0
-moedas100 = 0
-moedas50 = 0
-moedas25 = 0
-moedas5 = 0
-moedas1 = 0
+qtdMoedas = 0
+troco = int(input('Digite o troco: '))
 
-for moeda in moedas:
-    if moeda <= abs(troco - totalTroco):
-        moedas[moeda] += 1
-        totalTroco += moeda
+for i in range(len(moedas)):
+    num_moedas = troco // moedas[i]
+    troco -= num_moedas * moedas[i]
+    qtdMoedas += num_moedas
 
-print('Quantidade mínima de moedas: %d ' %qtmoedas)
+    if troco == 0:
+        break
+
+print('Qtd de moedas: %d ' %qtdMoedas)
