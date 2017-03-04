@@ -19,6 +19,7 @@ qual a qtde mínima de moedas?
 2 moedas (1 moeda de 50, 1 moeda de 25)
 '''
 
+# moedas = [100, 50, 25, 10, 5, 1]
 moedas = [100, 50, 25, 5, 1]
 qtdMoedas = 0
 troco = int(input('Digite o troco: '))
